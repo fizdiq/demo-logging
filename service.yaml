@@ -13,3 +13,4 @@ spec:
       targetPort: 8080
   selector:
     io.kompose.service: demo-logging
+  type: LoadBalancer
