@@ -6,6 +6,8 @@ WORKDIR /app
 COPY ./ /app/demo-logging/
 WORKDIR /app/demo-logging
 
+RUN mvn -Dmaven.test.skip=true clean package
+
 FROM openjdk:11-jre-slim
 ENV DEBIAN_FRONTEND noninteractive
 
